@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <style>
+        p {
+            font-size: 20px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <button onclick="showData()">total population</button>
-     <button onclick="showData1()">Lessthan 2lake</button>
-    <button onclick="showData2()">allData</button> 
-    <button onclick="showData3()">UsDollars</button> 
-    <div id="demo"></div>
-    <div id="demo2"></div>
-    <script src="region.js"></script>
-    <script src="population.js"></script>
-    <script src="allData.js"></script>
-    <script src="Data.js"></script>
 
+<body>
+    <div style="display: flex;justify-content: space-around;">
+        <button onclick="search()">Find Kerala Person name</button>
+    <button onclick="search1()">Age below 25</button>
+    <button onclick="search2()">Total PersonsBank balance</button>
+    <button onclick="search3()">Only B.A(Tamil)</button>
+    </div>
+
+
+    <div style="display: flex;justify-content: space-between;height: 80vh;">
+        <div id="demo" style="flex: 1;background-color: aliceblue;">
+        </div>
+        <div id="demo1" style="flex: 1;background-color: rgb(13, 130, 232);color: white;"></div>
+        <div id="demo2" style="flex: 1;;background-color:brown;color: white;"></div>
+        <div id="demo3" style="flex: 1;;background-color: black;color: white;"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
